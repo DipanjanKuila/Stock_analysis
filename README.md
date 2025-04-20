@@ -18,6 +18,7 @@ This project is an end-to-end automation system that reads financial PDFs upload
 ---
 
 ## 🗂 Project Structure
+```env
 
 auto stock-analysizer/
 │
@@ -25,14 +26,17 @@ auto stock-analysizer/
 ├── gdrive_watcher       👈 monitored folder
 ├── credentials.json 
 ├── token.json
+```
 
 
 
 ## 🔑 Configuration
 ### Azure OpenAI API Keys (in agent_pipeline.py)
+```env
 os.environ["AZURE_OPENAI_API_KEY"] = "your-azure-api-key"
 os.environ["AZURE_OPENAI_ENDPOINT"] = "your-endpoint-url"
 os.environ["OPENAI_API_VERSION"] = "2024-02-01"
+```
 
 ## Gmail SMTP Settings 
 EMAIL_ADDRESS = "youremail@gmail.com"
