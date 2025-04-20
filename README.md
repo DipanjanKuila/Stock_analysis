@@ -35,7 +35,7 @@ auto stock-analysizer/
 ```env
 os.environ["AZURE_OPENAI_API_KEY"] = "your-azure-api-key"
 os.environ["AZURE_OPENAI_ENDPOINT"] = "your-endpoint-url"
-os.environ["OPENAI_API_VERSION"] = "2024-02-01"
+os.environ["OPENAI_API_VERSION"] = "your app version"
 ```
 
 ## Gmail SMTP Settings 
@@ -45,6 +45,7 @@ EMAIL_PASSWORD = "your-app-password"
 https://myaccount.google.com/apppasswords
 
 ## ☁️ Google Drive Setup
+```env
 - Go to Google Cloud Console
 - Create a new project
 - Enable Google Drive API
@@ -52,6 +53,7 @@ https://myaccount.google.com/apppasswords
 - Download both:
 - credentials.json
 -token.json (will be created on first auth run)
+```
 
 ## In gdrive_watcher.py, update your folder ID:
 FOLDER_ID = "your-google-drive-folder-id"
